@@ -1,7 +1,7 @@
 ### output-values.tf
 
 ```sh
-provider "aws" {
+common "aws" {
   region = "us-east-1"
 }
 

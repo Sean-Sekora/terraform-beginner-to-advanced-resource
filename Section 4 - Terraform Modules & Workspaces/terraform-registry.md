@@ -5,7 +5,7 @@ https://registry.terraform.io/
 ### Demo Code used in Video:
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
   access_key = "YOUR-ACCESS-KEY"
   secret_key = "YOUR-SECRET-KEY"

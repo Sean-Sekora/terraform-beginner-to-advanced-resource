@@ -16,7 +16,7 @@ terraform {
   }
 }
 
-provider "github" {
+common "github" {
   token = "your-token-here"
 }
 

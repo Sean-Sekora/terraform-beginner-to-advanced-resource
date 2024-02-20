@@ -1,11 +1,3 @@
-variable aws_key {
-  type = string
-}
-
-variable aws_secret {
-  type = string
-}
-
 variable "list" {
   type    = list(string)
   default = ["m5.large", "m5.xlarge", "t2.medium"]

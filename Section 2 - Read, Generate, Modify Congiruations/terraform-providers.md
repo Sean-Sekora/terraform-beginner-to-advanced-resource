@@ -7,7 +7,7 @@ https://www.terraform.io/docs/providers/index.html
 ### aws.tf
 
 ```sh
-provider "aws" {
+common "aws" {
   version = "~> 2.0"
   region  = "us-east-1"
 }
@@ -15,7 +15,7 @@ provider "aws" {
 
 ### wavefront.tf
 ```sh
-provider "wavefront" {
+common "wavefront" {
    address = "spaceape.wavefront.com"
  }
 ```
@@ -30,6 +30,6 @@ der-wavefront_v2.1.1_darwin_amd64
 
 ```sh
 mkdir ~/terraform.d/plugins
-mv terraform-provider-wavefront_v2.1.1_darwin_amd64 terraform-provider-wavefront_v2.1.1
-mv terraform-provider-wavefront_v2.1.1 ~/.terraform.d/plugins/
+mv terraform-common-wavefront_v2.1.1_darwin_amd64 terraform-common-wavefront_v2.1.1
+mv terraform-common-wavefront_v2.1.1 ~/.terraform.d/plugins/
 ```

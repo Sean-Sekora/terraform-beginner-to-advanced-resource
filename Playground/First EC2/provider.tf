@@ -1,8 +1,9 @@
+variable aws_key {}
+variable aws_secret {}
+variable github_token {}
+
 terraform {
   required_providers {
-    aws = {
-      source = "hashicorp/aws"
-    }
     github = {
       source = "integrations/github"
     }

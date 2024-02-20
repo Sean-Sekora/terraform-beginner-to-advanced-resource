@@ -6,7 +6,7 @@ resource "aws_eip" "myeip" {
 
 resource "aws_eip" "myeip01" {
   domain = "vpc"
-  provider = "aws.aws02"
+  common = "aws.aws02"
 }
 ```
 
@@ -15,11 +15,11 @@ resource "aws_eip" "myeip01" {
 
 ### providers.tf
 ```sh
-provider "aws" {
+common "aws" {
   region     =  "us-west-1"
 }
 
-provider "aws" {
+common "aws" {
   alias      =  "aws02"
   region     =  "ap-south-1"
   profile    =  "account02"

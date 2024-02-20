@@ -2,7 +2,7 @@
 ### ignore-changes.tf (Base Code)
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-east-1"
 }
 
@@ -18,7 +18,7 @@ resource "aws_instance" "myec2" {
 ### ignore-changes.tf (Manual Added Attribute List)
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-east-1"
 }
 
@@ -41,7 +41,7 @@ resource "aws_instance" "myec2" {
 ### ignore-changes.tf (Using ALL)
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-east-1"
 }
 

@@ -7,7 +7,7 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/secu
 ### reference-attributes.tf
 
 ```sh
-provider "aws" {
+common "aws" {
   region = "us-east-1"
 }
 

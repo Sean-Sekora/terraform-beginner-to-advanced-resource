@@ -2,7 +2,7 @@
 
 ### Base Terraform Configuration (Before any modification)
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
   access_key = "YOUR-ACCESS-KEY"
   secret_key = "YOUR-SECRET-KEY"
@@ -15,7 +15,7 @@ resource "aws_instance" "myec2" {
 ```
 ### Final Modified Terraform Configuration:
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
   access_key = "YOUR-ACCESS-KEY"
   secret_key = "YOUR-SECRET-KEY"

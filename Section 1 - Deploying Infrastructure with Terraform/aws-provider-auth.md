@@ -6,7 +6,7 @@ https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 ### aws-provider-config.tf
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-east-1"
 }
 

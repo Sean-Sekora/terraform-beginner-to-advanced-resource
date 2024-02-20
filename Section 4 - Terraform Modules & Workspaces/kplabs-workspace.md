@@ -10,7 +10,7 @@ terraform workspace select dev
 
 ### Terraform Based Configuration File
 ```sh
-provider "aws" {
+common "aws" {
   region     = "ap-south-1"
   access_key = "YOUR-ACCESS-KEY"
   secret_key = "YOUR-SECRET-KEY"
@@ -24,7 +24,7 @@ resource "aws_instance" "myec2" {
 
 ### Terraform Final Modified Configuration File
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
   access_key = "YOUR-ACCESS-KEY"
   secret_key = "YOUR-SECRET-KEY"

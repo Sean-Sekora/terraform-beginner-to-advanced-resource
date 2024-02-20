@@ -8,7 +8,7 @@ https://www.terraform.io/language/functions/file
 
 ### Base Code:
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
   access_key = "YOUR-KEY"
   secret_key = "YOUR-KEY"
@@ -24,7 +24,7 @@ resource "aws_instance" "myec2" {
 
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
   access_key = "YOUR-KEY"
   secret_key = "YOUR-KEY"

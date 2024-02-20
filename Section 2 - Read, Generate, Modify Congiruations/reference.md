@@ -48,7 +48,7 @@ If you still get any error, feel free to raise your query in our Discord communi
 ### Code:
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
   access_key = "PUT-YOUR-ACCESS-KEY-HERE"
   secret_key = "PUT-YOUR-SECRET-KEY-HERE"

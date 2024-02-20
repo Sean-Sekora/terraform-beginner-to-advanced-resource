@@ -3,7 +3,7 @@
 ### iam-count-parameter.tf
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
   access_key = "YOUR-ACCESS-KEY"
   secret_key = "YOUR-SECRET-KEY"
@@ -23,7 +23,7 @@ resource "aws_iam_user" "lb" {
 ### count-paremeter.tf
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
   access_key = "YOUR-ACCESS-KEY"
   secret_key = "YOUR-SECRET-KEY"

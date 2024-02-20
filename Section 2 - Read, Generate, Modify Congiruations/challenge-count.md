@@ -2,7 +2,7 @@
 
 ### Base Example Used in Video:
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
   access_key = ""
   secret_key = ""

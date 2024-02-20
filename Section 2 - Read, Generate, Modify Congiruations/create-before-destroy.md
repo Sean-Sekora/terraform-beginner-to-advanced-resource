@@ -1,6 +1,6 @@
 ### create-before-destroy.tf (Base Code)
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-east-1"
 }
 
@@ -15,7 +15,7 @@ resource "aws_instance" "myec2" {
 ```
 ### create-before-destroy.tf (Final Code)
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-east-1"
 }
 

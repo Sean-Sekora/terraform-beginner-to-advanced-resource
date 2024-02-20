@@ -6,7 +6,7 @@ Make sure to have the ec2-key.pem file present in the working directory for the 
 
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "ap-southeast-1"
   access_key = "YOUR-KEY"
   secret_key = "YOUR-KEY"

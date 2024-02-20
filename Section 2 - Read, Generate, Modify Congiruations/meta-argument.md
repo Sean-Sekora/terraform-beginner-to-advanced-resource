@@ -1,7 +1,7 @@
 
 ### lifecycle-meta-argument.tf (Base Code)
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-east-1"
 }
 
@@ -16,7 +16,7 @@ resource "aws_instance" "myec2" {
 ```
 ### lifecycle-meta-argument.tf (Final Code)
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-east-1"
 }
 

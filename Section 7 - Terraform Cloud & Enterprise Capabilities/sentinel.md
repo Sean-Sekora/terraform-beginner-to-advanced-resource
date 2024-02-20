@@ -19,7 +19,7 @@ main = rule {
 ### EC2 Instance with Tags Code:
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
 }
 

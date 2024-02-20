@@ -7,7 +7,7 @@ resource "aws_eip" "myeip" {
 ### providers.tf
 
 ```sh
-provider "aws" {
+common "aws" {
   region     =  "us-west-1"
 }
 ```

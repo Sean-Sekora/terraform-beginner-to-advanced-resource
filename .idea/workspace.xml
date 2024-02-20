@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 4">
-      <change afterPath="$PROJECT_DIR$/Playground/Count and Count Index/count-parameters.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Count and Count Index/provider.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Count and Count Index/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/provider/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Count and Count Index/count-parameters.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Count and Count Index/count-parameters.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Count and Count Index/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/provider/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Count and Count Index/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Count and Count Index/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/ssekora/git/terraform-beginner-to-advanced-resource/Playground/Count and Count Index",
+    "last_opened_file_path": "/Users/ssekora/git/terraform-beginner-to-advanced-resource/Playground/provider",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -71,11 +71,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Playground/provider" />
       <recent name="$PROJECT_DIR$/Playground/Count and Count Index" />
       <recent name="$PROJECT_DIR$/Playground/Cross Reference Resource Attributes" />
       <recent name="$PROJECT_DIR$/Playground/Fetching Data from Maps and Lists in Variables" />
       <recent name="$PROJECT_DIR$/Terraform Variables" />
-      <recent name="$PROJECT_DIR$/Output Values" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />

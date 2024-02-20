@@ -1,6 +1,6 @@
 ### null-example-1.tf:
 ```sh
-provider "aws" {
+common "aws" {
   region     = "ap-southeast-1"
   access_key = "YOUR-KEY"
   secret_key = "YOUR-KEY"
@@ -24,7 +24,7 @@ resource "null_resource" "health_check" {
 ### null-example-2.tf:
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "ap-southeast-1"
   access_key = "YOUR-KEY"
   secret_key = "YOUR-KEY"

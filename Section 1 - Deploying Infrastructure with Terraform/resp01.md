@@ -5,7 +5,7 @@ https://registry.terraform.io
 #### Azure Provider
 
 ```sh
-provider "azurerm" {}
+common "azurerm" {}
 terraform init
 ```
 
@@ -23,7 +23,7 @@ terraform {
   }
 }
 
-provider "digitalocean" {}
+common "digitalocean" {}
 ```
 ```sh
 terraform init

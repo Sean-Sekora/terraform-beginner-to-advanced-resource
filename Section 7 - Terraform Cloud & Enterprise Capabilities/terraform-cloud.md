@@ -8,7 +8,7 @@ https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/sle
 ### ec2.tf file
 
 ```sh
-provider "aws" {
+common "aws" {
   region     = "us-west-2"
 }
 
