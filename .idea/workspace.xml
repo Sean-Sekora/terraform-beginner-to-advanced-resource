@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 4">
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Debugging in Terraform/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4 - Debugging in Terraform/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/.terraform.lock.hcl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/data.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/ec2.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/iam_user.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/terraform.tfstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/terraform.tfstate.backup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Data Source/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4 - Data Source/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Data Source/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4 - Data Source/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Data Source/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4 - Data Source/terraform.tfstate.backup" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +95,27 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Playground" />
     </key>
+  </component>
+  <component name="RunManager" selected="Shell Script.TF Init All">
+    <configuration name="TF Init All" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="for d in ./Playground/*/ ; do (cd &quot;$d&quot; &amp;&amp; echo &quot;*********&quot; &amp;&amp; echo $d &amp;&amp; echo &quot;*********&quot; &amp;&amp; terraform init); done " />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/tf_cleanup.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Shell Script.TF Destroy All" />
+      <item itemvalue="Shell Script.TF Init All" />
+    </list>
   </component>
   <component name="ShelveChangesManager">
     <option name="remove_strategy" value="true" />
