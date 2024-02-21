@@ -1,0 +1,638 @@
+Index: Playground/Section 4 - Conditional Expressions/terraform.tfstate
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playground/Section 4 - Conditional Expressions/terraform.tfstate b/Playground/Section 4 - Conditional Expressions/terraform.tfstate
+new file mode 100644
+--- /dev/null	(date 1708537700434)
++++ b/Playground/Section 4 - Conditional Expressions/terraform.tfstate	(date 1708537700434)
+@@ -0,0 +1,9 @@
++{
++  "version": 4,
++  "terraform_version": "1.7.3",
++  "serial": 1,
++  "lineage": "72e7d92f-92f6-94d3-0a09-719c9b416f4f",
++  "outputs": {},
++  "resources": [],
++  "check_results": null
++}
+Index: Playground/Section 4 - Local Variables/terraform.tfstate
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playground/Section 4 - Local Variables/terraform.tfstate b/Playground/Section 4 - Local Variables/terraform.tfstate
+new file mode 100644
+--- /dev/null	(date 1708537700434)
++++ b/Playground/Section 4 - Local Variables/terraform.tfstate	(date 1708537700434)
+@@ -0,0 +1,9 @@
++{
++  "version": 4,
++  "terraform_version": "1.7.3",
++  "serial": 1,
++  "lineage": "d4f3985e-d9b1-723b-35a5-697039cf3874",
++  "outputs": {},
++  "resources": [],
++  "check_results": null
++}
+Index: Playground/Section 4 - Fetching Data from Maps and Lists in Variables/terraform.tfstate
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playground/Section 4 - Fetching Data from Maps and Lists in Variables/terraform.tfstate b/Playground/Section 4 - Fetching Data from Maps and Lists in Variables/terraform.tfstate
+new file mode 100644
+--- /dev/null	(date 1708537700434)
++++ b/Playground/Section 4 - Fetching Data from Maps and Lists in Variables/terraform.tfstate	(date 1708537700434)
+@@ -0,0 +1,9 @@
++{
++  "version": 4,
++  "terraform_version": "1.7.3",
++  "serial": 1,
++  "lineage": "6485fd16-a904-9b0a-553e-15b5ae910d41",
++  "outputs": {},
++  "resources": [],
++  "check_results": null
++}
+Index: Playground/Section 4 - Cross Reference Resource Attributes/terraform.tfstate
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"version\": 4,\n  \"terraform_version\": \"1.5.7\",\n  \"serial\": 13,\n  \"lineage\": \"f33ad43c-8717-0c0e-68f0-f2a04a6325f1\",\n  \"outputs\": {},\n  \"resources\": [],\n  \"check_results\": null\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playground/Section 4 - Cross Reference Resource Attributes/terraform.tfstate b/Playground/Section 4 - Cross Reference Resource Attributes/terraform.tfstate
+--- a/Playground/Section 4 - Cross Reference Resource Attributes/terraform.tfstate	(revision 8ba54c5b65483775a73d61a63cacad7b5a6eaecf)
++++ b/Playground/Section 4 - Cross Reference Resource Attributes/terraform.tfstate	(date 1708537700434)
+@@ -1,6 +1,6 @@
+ {
+   "version": 4,
+-  "terraform_version": "1.5.7",
++  "terraform_version": "1.7.3",
+   "serial": 13,
+   "lineage": "f33ad43c-8717-0c0e-68f0-f2a04a6325f1",
+   "outputs": {},
+Index: Playground/Section 4 - Terraform Functions/functions.tf
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playground/Section 4 - Terraform Functions/functions.tf b/Playground/Section 4 - Terraform Functions/functions.tf
+new file mode 100644
+--- /dev/null	(date 1708537700435)
++++ b/Playground/Section 4 - Terraform Functions/functions.tf	(date 1708537700435)
+@@ -0,0 +1,36 @@
++locals {
++  time = formatdate("DD MMM YYYY hh:mm ZZZ", timestamp())
++}
++
++variable "region" {
++  default = "ap-south-1"
++}
++
++variable "tags" {
++  type    = list(string)
++  default = ["first_ec2", "second_ec2"]
++}
++
++variable "ami" {
++  type    = map(string)
++  default = {
++    "us-east-1"  = "ami-0440d3b780d96b29d"
++    "us-west-2"  = "ami-052c9ea013e6e3567"
++    "ap-south-1" = "ami-06b72b3b2a773be2b"
++  }
++}
++
++resource "aws_key_pair" "login_key" {
++  key_name   = "login-key"
++  public_key = file("${path.module}/id_rsa.pub")
++}
++
++resource "aws_instance" "app-dev" {
++  ami           = lookup(var.ami, var.region)
++  instance_type = "t2.micro"
++  key_name      = aws_key_pair.login_key.key_name
++  count         = 2
++  tags          = {
++    Name = element(var.tags, count.index)
++  }
++}
+Index: Playground/Section 4 - Count and Count Index/terraform.tfstate
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"version\": 4,\n  \"terraform_version\": \"1.5.7\",\n  \"serial\": 8,\n  \"lineage\": \"4c7d9879-0cdf-8a8c-083a-9c248b3a58fe\",\n  \"outputs\": {},\n  \"resources\": [],\n  \"check_results\": null\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playground/Section 4 - Count and Count Index/terraform.tfstate b/Playground/Section 4 - Count and Count Index/terraform.tfstate
+--- a/Playground/Section 4 - Count and Count Index/terraform.tfstate	(revision 8ba54c5b65483775a73d61a63cacad7b5a6eaecf)
++++ b/Playground/Section 4 - Count and Count Index/terraform.tfstate	(date 1708537700434)
+@@ -1,6 +1,6 @@
+ {
+   "version": 4,
+-  "terraform_version": "1.5.7",
++  "terraform_version": "1.7.3",
+   "serial": 8,
+   "lineage": "4c7d9879-0cdf-8a8c-083a-9c248b3a58fe",
+   "outputs": {},
+Index: Playground/Section 4 - Terraform Functions/.terraform.lock.hcl
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playground/Section 4 - Terraform Functions/.terraform.lock.hcl b/Playground/Section 4 - Terraform Functions/.terraform.lock.hcl
+new file mode 100644
+--- /dev/null	(date 1708537700435)
++++ b/Playground/Section 4 - Terraform Functions/.terraform.lock.hcl	(date 1708537700435)
+@@ -0,0 +1,24 @@
++# This file is maintained automatically by "terraform init".
++# Manual edits may be lost in future updates.
++
++provider "registry.terraform.io/hashicorp/aws" {
++  version = "5.37.0"
++  hashes = [
++    "h1:CQeYyWigNz838zjXKYH9VDkpjqlGB0phcM742YXiNh4=",
++    "zh:00f40a3d9593476693a7a72d993fd289f7be374fe3f2799776c6296eb6ff890a",
++    "zh:1010a9fbf55852a8da3473de4ec0f1fcf29efa85d66f61cbe2b086dbbd7747ae",
++    "zh:103a5674d1eb1cff05fe35e9baa9875afd18d740868b63f9c0c25eadb5eb4eb7",
++    "zh:270ac1b7a1327c1456a43df44c0b5cc3e26ed6d8861a709adeea1da684a563f5",
++    "zh:424362c02c8917c0586f3dd49aca27b7e0c21f5a23374b7045e9be3b5646c028",
++    "zh:549fa2ea187964ab9a0c354310947ead30e09b3199db1ff377c21d7547d78299",
++    "zh:6492d2ccc7f7d60e83cd8b7244adc53f30efc17d84b1ffc1b8fd6c385f8255fd",
++    "zh:66fb7b3b8a357071d26c5996c16d426edf07502a05ac86f4a6f73646ee7d1bbb",
++    "zh:6ecc05fb466d06ea8945564d2cdb8c2a8827d8cfca1550e9fb7eac0e95920196",
++    "zh:7932360b627b211dad937d278a8692a6c52bd6c0a71e4ec9e94ccbe825053822",
++    "zh:97ed1b4a18842c4d56a735329e87b4ef91a47e820e5a5c3c2dd64e293408bfc8",
++    "zh:9b12af85486a96aedd8d7984b0ff811a4b42e3d88dad1a3fb4c0b580d04fa425",
++    "zh:d5e022052011e1984b9c2f8bc5a6b05c909e3b5bf40c3baddf191bf90e3169c2",
++    "zh:d7e9488b2ce5904efb91c8577b3fe9b0cd599c4cd508f1f163f292930f54fdf0",
++    "zh:e57cd93d5cd81dd0f446076af6e47a53ce83df2947ec64ed39a1090d4bdf8f0b",
++  ]
++}
+Index: Playground/Section 4 - Terraform Functions/terraform.tfstate
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playground/Section 4 - Terraform Functions/terraform.tfstate b/Playground/Section 4 - Terraform Functions/terraform.tfstate
+new file mode 100644
+--- /dev/null	(date 1708537700436)
++++ b/Playground/Section 4 - Terraform Functions/terraform.tfstate	(date 1708537700436)
+@@ -0,0 +1,9 @@
++{
++  "version": 4,
++  "terraform_version": "1.7.3",
++  "serial": 12,
++  "lineage": "a9ac5435-9a07-df4b-5a0b-be1513921e86",
++  "outputs": {},
++  "resources": [],
++  "check_results": null
++}
+Index: Playground/Section 4 - Terraform Functions/terraform.tfstate.backup
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playground/Section 4 - Terraform Functions/terraform.tfstate.backup b/Playground/Section 4 - Terraform Functions/terraform.tfstate.backup
+new file mode 100644
+--- /dev/null	(date 1708537700436)
++++ b/Playground/Section 4 - Terraform Functions/terraform.tfstate.backup	(date 1708537700436)
+@@ -0,0 +1,299 @@
++{
++  "version": 4,
++  "terraform_version": "1.7.3",
++  "serial": 8,
++  "lineage": "a9ac5435-9a07-df4b-5a0b-be1513921e86",
++  "outputs": {},
++  "resources": [
++    {
++      "mode": "managed",
++      "type": "aws_instance",
++      "name": "app-dev",
++      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
++      "instances": [
++        {
++          "index_key": 0,
++          "schema_version": 1,
++          "attributes": {
++            "ami": "ami-06b72b3b2a773be2b",
++            "arn": "arn:aws:ec2:ap-south-1:284442860920:instance/i-09a3580e7d882dd47",
++            "associate_public_ip_address": true,
++            "availability_zone": "ap-south-1a",
++            "capacity_reservation_specification": [
++              {
++                "capacity_reservation_preference": "open",
++                "capacity_reservation_target": []
++              }
++            ],
++            "cpu_core_count": 1,
++            "cpu_options": [
++              {
++                "amd_sev_snp": "",
++                "core_count": 1,
++                "threads_per_core": 1
++              }
++            ],
++            "cpu_threads_per_core": 1,
++            "credit_specification": [
++              {
++                "cpu_credits": "standard"
++              }
++            ],
++            "disable_api_stop": false,
++            "disable_api_termination": false,
++            "ebs_block_device": [],
++            "ebs_optimized": false,
++            "enclave_options": [
++              {
++                "enabled": false
++              }
++            ],
++            "ephemeral_block_device": [],
++            "get_password_data": false,
++            "hibernation": false,
++            "host_id": "",
++            "host_resource_group_arn": null,
++            "iam_instance_profile": "",
++            "id": "i-09a3580e7d882dd47",
++            "instance_initiated_shutdown_behavior": "stop",
++            "instance_lifecycle": "",
++            "instance_market_options": [],
++            "instance_state": "running",
++            "instance_type": "t2.micro",
++            "ipv6_address_count": 0,
++            "ipv6_addresses": [],
++            "key_name": "login-key",
++            "launch_template": [],
++            "maintenance_options": [
++              {
++                "auto_recovery": "default"
++              }
++            ],
++            "metadata_options": [
++              {
++                "http_endpoint": "enabled",
++                "http_protocol_ipv6": "disabled",
++                "http_put_response_hop_limit": 1,
++                "http_tokens": "optional",
++                "instance_metadata_tags": "disabled"
++              }
++            ],
++            "monitoring": false,
++            "network_interface": [],
++            "outpost_arn": "",
++            "password_data": "",
++            "placement_group": "",
++            "placement_partition_number": 0,
++            "primary_network_interface_id": "eni-0b21c022120094fb2",
++            "private_dns": "ip-172-31-46-80.ap-south-1.compute.internal",
++            "private_dns_name_options": [
++              {
++                "enable_resource_name_dns_a_record": false,
++                "enable_resource_name_dns_aaaa_record": false,
++                "hostname_type": "ip-name"
++              }
++            ],
++            "private_ip": "172.31.46.80",
++            "public_dns": "ec2-13-126-95-252.ap-south-1.compute.amazonaws.com",
++            "public_ip": "13.126.95.252",
++            "root_block_device": [
++              {
++                "delete_on_termination": true,
++                "device_name": "/dev/xvda",
++                "encrypted": false,
++                "iops": 100,
++                "kms_key_id": "",
++                "tags": {},
++                "throughput": 0,
++                "volume_id": "vol-0b8bfdb96f9da9e1c",
++                "volume_size": 8,
++                "volume_type": "gp2"
++              }
++            ],
++            "secondary_private_ips": [],
++            "security_groups": [
++              "default"
++            ],
++            "source_dest_check": true,
++            "spot_instance_request_id": "",
++            "subnet_id": "subnet-0726786f",
++            "tags": {
++              "Name": "first_ec2"
++            },
++            "tags_all": {
++              "Name": "first_ec2"
++            },
++            "tenancy": "default",
++            "timeouts": null,
++            "user_data": null,
++            "user_data_base64": null,
++            "user_data_replace_on_change": false,
++            "volume_tags": null,
++            "vpc_security_group_ids": [
++              "sg-4b687527"
++            ]
++          },
++          "sensitive_attributes": [],
++          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMCwidXBkYXRlIjo2MDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjEifQ==",
++          "dependencies": [
++            "aws_key_pair.login_key"
++          ]
++        },
++        {
++          "index_key": 1,
++          "schema_version": 1,
++          "attributes": {
++            "ami": "ami-06b72b3b2a773be2b",
++            "arn": "arn:aws:ec2:ap-south-1:284442860920:instance/i-0f07acc4456e0645c",
++            "associate_public_ip_address": true,
++            "availability_zone": "ap-south-1a",
++            "capacity_reservation_specification": [
++              {
++                "capacity_reservation_preference": "open",
++                "capacity_reservation_target": []
++              }
++            ],
++            "cpu_core_count": 1,
++            "cpu_options": [
++              {
++                "amd_sev_snp": "",
++                "core_count": 1,
++                "threads_per_core": 1
++              }
++            ],
++            "cpu_threads_per_core": 1,
++            "credit_specification": [
++              {
++                "cpu_credits": "standard"
++              }
++            ],
++            "disable_api_stop": false,
++            "disable_api_termination": false,
++            "ebs_block_device": [],
++            "ebs_optimized": false,
++            "enclave_options": [
++              {
++                "enabled": false
++              }
++            ],
++            "ephemeral_block_device": [],
++            "get_password_data": false,
++            "hibernation": false,
++            "host_id": "",
++            "host_resource_group_arn": null,
++            "iam_instance_profile": "",
++            "id": "i-0f07acc4456e0645c",
++            "instance_initiated_shutdown_behavior": "stop",
++            "instance_lifecycle": "",
++            "instance_market_options": [],
++            "instance_state": "running",
++            "instance_type": "t2.micro",
++            "ipv6_address_count": 0,
++            "ipv6_addresses": [],
++            "key_name": "login-key",
++            "launch_template": [],
++            "maintenance_options": [
++              {
++                "auto_recovery": "default"
++              }
++            ],
++            "metadata_options": [
++              {
++                "http_endpoint": "enabled",
++                "http_protocol_ipv6": "disabled",
++                "http_put_response_hop_limit": 1,
++                "http_tokens": "optional",
++                "instance_metadata_tags": "disabled"
++              }
++            ],
++            "monitoring": false,
++            "network_interface": [],
++            "outpost_arn": "",
++            "password_data": "",
++            "placement_group": "",
++            "placement_partition_number": 0,
++            "primary_network_interface_id": "eni-08c8e5f66ead36d1a",
++            "private_dns": "ip-172-31-32-75.ap-south-1.compute.internal",
++            "private_dns_name_options": [
++              {
++                "enable_resource_name_dns_a_record": false,
++                "enable_resource_name_dns_aaaa_record": false,
++                "hostname_type": "ip-name"
++              }
++            ],
++            "private_ip": "172.31.32.75",
++            "public_dns": "ec2-65-2-176-223.ap-south-1.compute.amazonaws.com",
++            "public_ip": "65.2.176.223",
++            "root_block_device": [
++              {
++                "delete_on_termination": true,
++                "device_name": "/dev/xvda",
++                "encrypted": false,
++                "iops": 100,
++                "kms_key_id": "",
++                "tags": {},
++                "throughput": 0,
++                "volume_id": "vol-013fd284ac7bb8e23",
++                "volume_size": 8,
++                "volume_type": "gp2"
++              }
++            ],
++            "secondary_private_ips": [],
++            "security_groups": [
++              "default"
++            ],
++            "source_dest_check": true,
++            "spot_instance_request_id": "",
++            "subnet_id": "subnet-0726786f",
++            "tags": {
++              "Name": "second_ec2"
++            },
++            "tags_all": {
++              "Name": "second_ec2"
++            },
++            "tenancy": "default",
++            "timeouts": null,
++            "user_data": null,
++            "user_data_base64": null,
++            "user_data_replace_on_change": false,
++            "volume_tags": null,
++            "vpc_security_group_ids": [
++              "sg-4b687527"
++            ]
++          },
++          "sensitive_attributes": [],
++          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMCwidXBkYXRlIjo2MDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjEifQ==",
++          "dependencies": [
++            "aws_key_pair.login_key"
++          ]
++        }
++      ]
++    },
++    {
++      "mode": "managed",
++      "type": "aws_key_pair",
++      "name": "login_key",
++      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
++      "instances": [
++        {
++          "schema_version": 1,
++          "attributes": {
++            "arn": "arn:aws:ec2:ap-south-1:284442860920:key-pair/login-key",
++            "fingerprint": "3f:23:f2:c8:d2:b8:33:24:e4:9d:11:d6:ae:07:e9:1b",
++            "id": "login-key",
++            "key_name": "login-key",
++            "key_name_prefix": "",
++            "key_pair_id": "key-063014c938ea2f06c",
++            "key_type": "rsa",
++            "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEHQwfcnNDTZYmWSAA83MDcIRJwzcRKcLUuyKt/C6ujkYauOT9R+YtfLo3dIUOdTckg5X+3KFzZDlcwEFEFa2F1xh6thGl1NtEk14DdSkz2yiOnXYij7+6JqrGs9M/2zrlaATm2PnSc+NtBxA0gamHInJPQ5Jy7LmgnVo90xgPj4ZN2/pG3wWcA2juC14ntRMzk/dYVpNsFHbuByhTSA8ROeVTinE8BXFUynEuB+OBooMQifcqTMe+okMimDGFW0viF5f8s0D6LS/4RBjP5t4n4srWFbhQvXm1XBK3D9usLRXyG6DoHW6PwDn8iLkLFzCpbMHrYmUcScwsL5evhGj7 sean@sekora.io",
++            "tags": null,
++            "tags_all": {}
++          },
++          "sensitive_attributes": [],
++          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
++        }
++      ]
++    }
++  ],
++  "check_results": null
++}
+Index: Playground/terraform.tfstate
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playground/terraform.tfstate b/Playground/terraform.tfstate
+new file mode 100644
+--- /dev/null	(date 1708537700436)
++++ b/Playground/terraform.tfstate	(date 1708537700436)
+@@ -0,0 +1,9 @@
++{
++  "version": 4,
++  "terraform_version": "1.7.3",
++  "serial": 1,
++  "lineage": "5534d8b3-819a-aaa3-4d32-497bc563cc33",
++  "outputs": {},
++  "resources": [],
++  "check_results": null
++}
+Index: Playground/Section 4 - Terraform Functions/provider.tf
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Playground/Section 4 - Terraform Functions/provider.tf b/Playground/Section 4 - Terraform Functions/provider.tf
+new file mode 100644
+--- /dev/null	(date 1708537700436)
++++ b/Playground/Section 4 - Terraform Functions/provider.tf	(date 1708537700436)
+@@ -0,0 +1,8 @@
++variable aws_key {}
++variable aws_secret {}
++
++provider "aws" {
++  region     = "ap-south-1"
++  access_key = var.aws_key
++  secret_key = var.aws_secret
++}
+Index: tf_cleanup.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tf_cleanup.sh b/tf_cleanup.sh
+new file mode 100755
+--- /dev/null	(date 1708537700437)
++++ b/tf_cleanup.sh	(date 1708537700437)
+@@ -0,0 +1,3 @@
++#!/bin/zsh
++
++for d in ./Playground/*/ ; do (cd "$d" && echo "*********" && echo $d && echo "*********" && terraform init && terraform destroy -auto-approve); done
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"ALL\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"95642940-814d-424d-bb65-6cf310c790b1\" name=\"Changes\" comment=\"Section 4\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ChangesViewManager\">\n    <option name=\"groupingKeys\">\n      <option value=\"directory\" />\n    </option>\n  </component>\n  <component name=\"FormatOnSaveOptions\">\n    <option name=\"mySelectedFileTypes\">\n      <set>\n        <option value=\"Go\" />\n        <option value=\"Terraform\" />\n        <option value=\"YAML\" />\n      </set>\n    </option>\n  </component>\n  <component name=\"GOROOT\" url=\"file:///usr/local/opt/go/libexec\" />\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitToolBoxStore\">\n    <option name=\"projectConfigVersion\" value=\"5\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 1\n}</component>\n  <component name=\"ProjectId\" id=\"2cXwXGncCxfu1htUs2mUlnNQAAZ\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,\n    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/ssekora/git/terraform-beginner-to-advanced-resource/Playground/provider&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/Playground/provider\" />\n      <recent name=\"$PROJECT_DIR$/Playground/Count and Count Index\" />\n      <recent name=\"$PROJECT_DIR$/Playground/Cross Reference Resource Attributes\" />\n      <recent name=\"$PROJECT_DIR$/Playground/Fetching Data from Maps and Lists in Variables\" />\n      <recent name=\"$PROJECT_DIR$/Terraform Variables\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$\" />\n      <recent name=\"$PROJECT_DIR$/Playground\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"update gitignore\" />\n    <MESSAGE value=\"Add files from Section 3\" />\n    <MESSAGE value=\"Section 4\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Section 4\" />\n  </component>\n  <component name=\"VgoProject\">\n    <settings-migrated>true</settings-migrated>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 8ba54c5b65483775a73d61a63cacad7b5a6eaecf)
++++ b/.idea/workspace.xml	(date 1708537700433)
+@@ -4,7 +4,16 @@
+     <option name="autoReloadType" value="ALL" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 4" />
++    <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 4">
++      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Terraform Functions/functions.tf" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Terraform Functions/id_rsa" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Terraform Functions/id_rsa.pub" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Playground/Section 4 - Terraform Functions/provider.tf" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/tf_cleanup.sh" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Count and Count Index/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4 - Count and Count Index/terraform.tfstate" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Cross Reference Resource Attributes/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4 - Cross Reference Resource Attributes/terraform.tfstate" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -39,38 +48,39 @@
+ }</component>
+   <component name="ProjectId" id="2cXwXGncCxfu1htUs2mUlnNQAAZ" />
+   <component name="ProjectLevelVcsManager">
++    <OptionsSetting value="false" id="Update" />
+     <ConfirmationsSetting value="2" id="Add" />
+   </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;/Users/ssekora/git/terraform-beginner-to-advanced-resource/Playground/provider&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.go.formatter.settings.were.checked": "true",
++    "RunOnceActivity.go.migrated.go.modules.settings": "true",
++    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "git-widget-placeholder": "master",
++    "go.import.settings.migrated": "true",
++    "go.sdk.automatically.set": "true",
++    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 4 - Terraform Functions",
++    "node.js.detected.package.eslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "settings.editor.selected.configurable": "terminal"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/Playground/Section 4 - Terraform Functions" />
+       <recent name="$PROJECT_DIR$/Playground/provider" />
+       <recent name="$PROJECT_DIR$/Playground/Count and Count Index" />
+       <recent name="$PROJECT_DIR$/Playground/Cross Reference Resource Attributes" />
+       <recent name="$PROJECT_DIR$/Playground/Fetching Data from Maps and Lists in Variables" />
+-      <recent name="$PROJECT_DIR$/Terraform Variables" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$" />
