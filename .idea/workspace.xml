@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 4">
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Tainting Resources/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Tainting Resources/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Splat Expressions/.terraform.lock.hcl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Splat Expressions/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Splat Expressions/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Splat Expressions/terraform.tfstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Splat Expressions/terraform.tfstate.backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
