@@ -5,79 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 4">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/TF_Destroy_All.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/TF_Destroy_All.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Tainting Resources/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Tainting Resources/provider.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 3 - First EC2/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 3 - First EC2/first_ec2.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 3 - First EC2/github.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 3 - First EC2/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 3 - First EC2/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 3 - First EC2/terraform.tfstate.backup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Conditional Expressions/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Conditional Expressions/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Conditional Expressions/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Conditional Expressions/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Conditional Expressions/variable.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Count and Count Index/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Count and Count Index/count-parameters.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Count and Count Index/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Count and Count Index/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Count and Count Index/terraform.tfstate.backup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Count and Count Index/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Cross Reference Resource Attributes/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Cross Reference Resource Attributes/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Cross Reference Resource Attributes/reference-attributes.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Cross Reference Resource Attributes/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Cross Reference Resource Attributes/terraform.tfstate.backup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Data Source/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Data Source/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Data Source/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Data Source/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Data Source/terraform.tfstate.backup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Debugging in Terraform/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Debugging in Terraform/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Debugging in Terraform/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Debugging in Terraform/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Debugging in Terraform/terraform.tfstate.backup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Dynamic Blocks/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Dynamic Blocks/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Dynamic Blocks/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Dynamic Blocks/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Dynamic Blocks/terraform.tfstate.backup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Fetching Data from Maps and Lists in Variables/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Fetching Data from Maps and Lists in Variables/fetch.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Fetching Data from Maps and Lists in Variables/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Fetching Data from Maps and Lists in Variables/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Fetching Data from Maps and Lists in Variables/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/data.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/ec2.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/iam_user.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/terraform.tfstate.backup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Load Order and Semantics/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Local Variables/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Local Variables/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Local Variables/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Local Variables/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Output Values/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Output Values/output-values.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Output Values/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Output Values/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Output Values/terraform.tfstate.backup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Functions/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Functions/functions.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Functions/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Functions/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Functions/terraform.tfstate.backup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Variables/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Variables/ec2.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Variables/provider.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Variables/terraform.tfstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Variables/terraform.tfstate.backup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Variables/terraform.tfvars" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4 - Terraform Variables/variables.tf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +67,7 @@
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 4 - Dynamic Blocks",
+    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 4",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -146,11 +76,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Playground/Section 4" />
       <recent name="$PROJECT_DIR$/Playground/Section 4 - Dynamic Blocks" />
       <recent name="$PROJECT_DIR$/Playground" />
       <recent name="$PROJECT_DIR$/Playground/Section 4 - Data Source" />
       <recent name="$PROJECT_DIR$/Playground/Section 4 - Terraform Functions" />
-      <recent name="$PROJECT_DIR$/Playground/provider" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Playground/Section 4" />
