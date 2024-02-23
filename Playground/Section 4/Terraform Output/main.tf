@@ -1,14 +1,13 @@
-data "aws_ami" "app_ami" {
-  most_recent = true
-  owners      = ["amazon"]
-
-  filter {
-    name   = "name"
-    values = ["amzn2-ami-hvm*"]
-  }
+resource "aws_iam_user" "lb" {
+  name  = "iamuser${count.index}"
+  count = 3
+  path  = "/system/"
 }
 
-resource "aws_instance" "udemy" {
-  ami           = data.aws_ami.app_ami.id
-  instance_type = "t2.micro"
+output "iam_names" {
+  value = aws_iam_user.lb[*].name
+}
+
+output "iam_arns" {
+  value = aws_iam_user.lb[*].arn
 }
