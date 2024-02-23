@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Saving Terraform Plan to FIle/demopath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/main.tf" afterDir="false" />
+YA      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/terraform.tfstate.backup" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
