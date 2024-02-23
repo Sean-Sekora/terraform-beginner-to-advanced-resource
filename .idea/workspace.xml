@@ -5,8 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 4">
-YA      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/terraform.tfstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Settings/.terraform.lock.hcl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Settings/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Settings/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Settings/terraform.tfstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Settings/terraform.tfstate.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 3/First EC2/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 3/First EC2/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Conditional Expressions/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Conditional Expressions/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Count and Count Index/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Count and Count Index/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Cross Reference Resource Attributes/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Cross Reference Resource Attributes/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Data Source/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Data Source/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Debugging in Terraform/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Debugging in Terraform/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Dynamic Blocks/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Dynamic Blocks/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Fetching Data from Maps and Lists in Variables/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Fetching Data from Maps and Lists in Variables/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Load Order and Semantics/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Load Order and Semantics/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Local Variables/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Local Variables/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Output Values/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Output Values/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Saving Terraform Plan to FIle/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Saving Terraform Plan to FIle/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Splat Expressions/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Splat Expressions/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Tainting-Replace Resources/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Tainting-Replace Resources/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Functions/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Functions/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Graph/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Graph/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Graph/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Graph/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/terraform.tfstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/terraform.tfstate.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Variables/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/Terraform Variables/provider.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,29 +79,29 @@ YA      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 4/Terraform Output",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ssekora/git/terraform-beginner-to-advanced-resource/Playground/Section 4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Playground/Section 4/Terraform Output" />
       <recent name="$PROJECT_DIR$/Playground/Section 4" />
+      <recent name="$PROJECT_DIR$/Playground/Section 4/Terraform Output" />
       <recent name="$PROJECT_DIR$/Playground/Section 4 - Dynamic Blocks" />
       <recent name="$PROJECT_DIR$/Playground" />
       <recent name="$PROJECT_DIR$/Playground/Section 4 - Data Source" />
@@ -87,7 +112,7 @@ YA      <change beforePath="$PROJECT_DIR$/Playground/Section 4/Terraform Output/
       <recent name="$PROJECT_DIR$/Playground" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.TF Destroy All">
+  <component name="RunManager" selected="Shell Script.TF Init All">
     <configuration name="TF Init All" type="ShConfigurationType">
       <option name="SCRIPT_TEXT" value="for d in ./Playground/*/*/ ; do (cd &quot;$d&quot; &amp;&amp; echo &quot;*********&quot; &amp;&amp; echo $d &amp;&amp; echo &quot;*********&quot; &amp;&amp; terraform init); done " />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
