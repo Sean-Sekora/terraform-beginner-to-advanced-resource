@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 6">
-      <change afterPath="$PROJECT_DIR$/Playground/Section 6/Terraform Workspace/.terraform.lock.hcl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 6/Terraform Workspace/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 6/Terraform Workspace/terraform.tfstate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 6/Terraform Workspace/terraform.tfstate.backup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Module Source in Terraform/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +67,7 @@
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 6",
+    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 7/Module Source in Terraform",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -79,11 +76,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Playground/Section 7/Module Source in Terraform" />
       <recent name="$PROJECT_DIR$/Playground/Section 6" />
       <recent name="$PROJECT_DIR$/Playground/Section 6/modules/sg" />
       <recent name="$PROJECT_DIR$/Playground/Section 6/EC2 Module" />
       <recent name="$PROJECT_DIR$/Playground/Section 6/modules/ec2" />
-      <recent name="$PROJECT_DIR$/Playground/Section 6/modules/provider" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Playground/Section 6/modules/ec2" />
