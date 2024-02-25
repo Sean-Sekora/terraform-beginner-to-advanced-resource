@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="TF Destroy All" type="ShConfigurationType">
-    <option name="SCRIPT_TEXT" value="for d in ./Playground/*/*/ ; do (cd &quot;$d&quot; &amp;&amp; echo &quot;*********&quot; &amp;&amp; echo $d &amp;&amp; echo &quot;*********&quot; &amp;&amp; terraform destroy -auto-approve); done " />
+    <option name="SCRIPT_TEXT" value="for d in ./Playground/Section\ 6/*/ ; do (cd &quot;$d&quot; &amp;&amp; echo &quot;*********&quot; &amp;&amp; echo $d &amp;&amp; echo &quot;*********&quot; &amp;&amp; terraform destroy -auto-approve); done " />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="$PROJECT_DIR$/tf_cleanup.sh" />
     <option name="SCRIPT_OPTIONS" value="" />

@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 4">
+    <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 5">
+      <change afterPath="$PROJECT_DIR$/Playground/Section 6/modules/ec2/ec2.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 6/modules/ec2/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/TF_Destroy_All.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/TF_Destroy_All.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4/For Each/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4/For Each/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/terraform.tfstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/Section 4/For Each/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/terraform.tfstate.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 5/Types of Provisioners/data.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 6/modules/ec2/data.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 5/Types of Provisioners/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 6/EC2 Module/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 5/Types of Provisioners/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 6/modules/ec2/provider.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +72,7 @@
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 4",
+    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 5/Types of Provisioners",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -78,16 +81,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Playground/Section 5/Types of Provisioners" />
       <recent name="$PROJECT_DIR$/Playground/Section 4" />
       <recent name="$PROJECT_DIR$/Playground/Section 4/LifeCycle Meta Argument" />
       <recent name="$PROJECT_DIR$/Playground/Section 4/Resource Behavior and Meta Arguments" />
       <recent name="$PROJECT_DIR$/Playground/Section 4/Zipmap" />
-      <recent name="$PROJECT_DIR$/Playground/Section 4/Terraform Output" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Playground/Section 6/modules/ec2" />
+      <recent name="$PROJECT_DIR$/Playground/Section 6/modules/data" />
+      <recent name="$PROJECT_DIR$/Playground/Section 6/modules/provider" />
       <recent name="$PROJECT_DIR$/Playground/Section 4" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Playground" />
     </key>
   </component>
   <component name="RunManager" selected="Shell Script.TF Destroy All">
@@ -133,7 +138,8 @@
     <MESSAGE value="update gitignore" />
     <MESSAGE value="Add files from Section 3" />
     <MESSAGE value="Section 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 4" />
+    <MESSAGE value="Section 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 5" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
