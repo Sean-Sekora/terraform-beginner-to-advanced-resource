@@ -1,2 +1,3 @@
 **/.terraform/*
 .idea/workspace.xml
+/Playground/Section 7/S3 Backend with DynamoDB State Locking/.terraform.lock.hcl
