@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 4">
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Data Type of Set/.terraform.lock.hcl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Data Type of Set/data.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Data Type of Set/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Data Type of Set/provider.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Data Type of Set/terraform.tfstate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/Data Type of Set/terraform.tfstate.backup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/.terraform.lock.hcl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/data.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/provider.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/terraform.tfstate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/terraform.tfstate.backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/For Each/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/For Each/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 4/For Each/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 4/For Each/terraform.tfstate.backup" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
