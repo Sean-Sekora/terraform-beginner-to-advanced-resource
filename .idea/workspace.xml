@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 7">
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Terraform Import/backend.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Terraform Import/import.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Terraform Import/provider.tf" afterDir="false" />
+    <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 8">
+      <change afterPath="$PROJECT_DIR$/Playground/Section 8/Multi Regions/backend.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 8/Multi Regions/data.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 8/Multi Regions/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 8/Multi Regions/provider.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 7/Terraform Import/import.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 7/Terraform Import/import.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playground/Section 7/Terraform Import/sg.tf" beforeDir="false" afterPath="$PROJECT_DIR$/Playground/Section 7/Terraform Import/sg.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +72,7 @@
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 7/Remote State/network-project",
+    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 8/Multi Regions",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -78,11 +81,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Playground/Section 8/Multi Regions" />
       <recent name="$PROJECT_DIR$/Playground/Section 7/Remote State/network-project" />
       <recent name="$PROJECT_DIR$/Playground/Section 7/Terraform Import" />
       <recent name="$PROJECT_DIR$/Playground/Section 7/Remote State" />
       <recent name="$PROJECT_DIR$/Playground/Section 7" />
-      <recent name="$PROJECT_DIR$/Playground/Section 7/S3 Backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Playground/Section 7/Terraform Import" />
@@ -138,7 +141,8 @@
     <MESSAGE value="Section 5" />
     <MESSAGE value="Section 6" />
     <MESSAGE value="Section 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 7" />
+    <MESSAGE value="Section 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 8" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
