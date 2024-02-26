@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 7">
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/S3 Backend/backend.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/S3 Backend/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/S3 Backend/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/network-project/backend.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/network-project/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/network-project/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/security-project/backend.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/security-project/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/security-project/remote_state.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/security-project/variables.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playground/terraform.tfstate" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 7/S3 Backend",
+    "last_opened_file_path": "/Users/seansekora/git/terraform-beginner-to-advanced-resource/Playground/Section 7/Remote State/network-project",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -79,18 +82,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Playground/Section 7/Remote State/network-project" />
+      <recent name="$PROJECT_DIR$/Playground/Section 7/Remote State" />
+      <recent name="$PROJECT_DIR$/Playground/Section 7" />
       <recent name="$PROJECT_DIR$/Playground/Section 7/S3 Backend" />
       <recent name="$PROJECT_DIR$/Playground/Section 7/Module Source in Terraform" />
-      <recent name="$PROJECT_DIR$/Playground/Section 6" />
-      <recent name="$PROJECT_DIR$/Playground/Section 6/modules/sg" />
-      <recent name="$PROJECT_DIR$/Playground/Section 6/EC2 Module" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Playground/Section 7/Remote State/security-project" />
       <recent name="$PROJECT_DIR$/Playground/Section 6/modules/ec2" />
       <recent name="$PROJECT_DIR$/Playground/Section 6/modules/provider" />
       <recent name="$PROJECT_DIR$/Playground/Section 6/modules/data" />
       <recent name="$PROJECT_DIR$/Playground/Section 4" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Shell Script.TF Destroy All">
