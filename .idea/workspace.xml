@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95642940-814d-424d-bb65-6cf310c790b1" name="Changes" comment="Section 7">
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/network-project/backend.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/network-project/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/network-project/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/security-project/backend.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/security-project/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/security-project/remote_state.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Remote State/security-project/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Terraform Import/backend.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Terraform Import/import.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Section 7/Terraform Import/provider.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,17 +79,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Playground/Section 7/Remote State/network-project" />
+      <recent name="$PROJECT_DIR$/Playground/Section 7/Terraform Import" />
       <recent name="$PROJECT_DIR$/Playground/Section 7/Remote State" />
       <recent name="$PROJECT_DIR$/Playground/Section 7" />
       <recent name="$PROJECT_DIR$/Playground/Section 7/S3 Backend" />
-      <recent name="$PROJECT_DIR$/Playground/Section 7/Module Source in Terraform" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Playground/Section 7/Terraform Import" />
       <recent name="$PROJECT_DIR$/Playground/Section 7/Remote State/security-project" />
       <recent name="$PROJECT_DIR$/Playground/Section 6/modules/ec2" />
       <recent name="$PROJECT_DIR$/Playground/Section 6/modules/provider" />
       <recent name="$PROJECT_DIR$/Playground/Section 6/modules/data" />
-      <recent name="$PROJECT_DIR$/Playground/Section 4" />
     </key>
   </component>
   <component name="RunManager" selected="Shell Script.TF Destroy All">
