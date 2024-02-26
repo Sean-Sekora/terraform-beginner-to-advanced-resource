@@ -1,4 +1,3 @@
 **/.terraform/*
 .idea/workspace.xml
 .terraform.lock.hcl
-workspace.xml
