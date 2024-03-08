@@ -1,0 +1,3 @@
+[submodule "terraform-cloud"]
+	path = terraform-cloud
+	url = git@github.com:Sean-Sekora/udemy-terraform-cloud.git
